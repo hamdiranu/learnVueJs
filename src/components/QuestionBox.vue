@@ -51,9 +51,6 @@ export default {
   },
   computed: {
     answers() {
-      // this function is no longer used in finished code
-      // it is replaced by the watch function below and the
-      // shuffleAnswers method
       let answers = [...this.currentQuestion.incorrect_answers]
       answers.push(this.currentQuestion.correct_answer)
       return answers
@@ -110,7 +107,7 @@ export default {
 
 <style scoped>
 .question-box-container{
-  margin-top: 10vh;
+  margin-top: 7vh;
 }
 
 .list-group {
